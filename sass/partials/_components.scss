@@ -1,0 +1,71 @@
+@use './core' as *;
+
+///////////////////////////////////////////////// Navigation
+.nav {
+    background-color: $theme-color;
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem 0;
+	}
+	.logo {
+		width: 80px;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 2rem;
+		background-color: azure;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-width: 50%;
+		padding-top: 2rem;
+		background-color: silver;
+		&-item {
+			background-color: beige;
+			margin-bottom: 2rem;
+			padding: 1rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.nav {
+		.container {
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 2rem;
+		}
+		.logo {
+			margin-bottom: 0;
+		}
+		&__list {
+			flex-direction: row;
+		}
+	}
+}
+//////////////////////////////////////////// Navigation end
+///////////////////////////////////////////////////////////
+/////////////////////////////////////////////// Button link
+///
+.btn {
+	display: block;
+	padding: 2rem;
+	background-color: $theme-color;
+	margin-bottom: 2rem;
+	text-align: center;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.btn {
+		width: 280px;
+		margin-right: 2rem;
+	}
+}
+
+/////////////////////////////////////////// Button link end

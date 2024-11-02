@@ -1,0 +1,113 @@
+// ---------------------------------Variables-------------------------------------//
+//________________________________________________________________________________//
+
+// Colors
+$theme-color: #4f4f4f;
+$secondary-color: #b6b6b6;
+$light-color: #f3f3f3;
+$dark-color: #333;
+$grey-color: #808080;
+$overlay-color: rgba(0, 0, 0, 0.5);
+
+// Size main
+$size-1: 0.5rem;
+$size-2: 1rem;
+$size-3: 2rem;
+$size-4: 3rem;
+$size-5: 4rem;
+$size-6: 6rem;
+$size-7: 8rem;
+
+// Margin page
+$margin-page-small: $size-3;
+$margin-page-medium: $size-5;
+$margin-page-large: $size-7;
+
+// Other
+$font-stack: Helvetica, sans-serif;
+$default-rounding: 5px;
+
+//----------------------- Mixins-------------------------//
+
+// Function gradient
+@mixin gradient($direction, $start-color, $end-color) {
+	background: linear-gradient($direction, $start-color, $end-color);
+  }
+
+// Base styles
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: $font-stack, sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	color: $dark-color;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 2.8rem;
+}
+
+h2 {
+	font-size: 2.4rem;
+}
+
+h3 {
+	font-size: 1.8rem;
+}
+
+h4,
+h5,
+h6,
+a,
+p,
+li {
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+}
+
+a {
+	text-decoration: none;
+	color: $grey-color;
+	cursor: pointer;
+}
+
+ul, li {
+	list-style: none;
+}
+
+button {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	font-family: $font-stack, sans-serif;
+	font-size: 1.6rem;
+}
+
+// Mixins styles
+@mixin default-animation {
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
