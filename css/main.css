@@ -222,9 +222,71 @@ section h2 {
   }
 }
 .realizations {
+  padding: 2rem 0;
   background-color: #b6b6b6;
 }
+.realizations h2 {
+  margin-bottom: 2rem;
+}
+.realizations__text {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+.realizations .container .row {
+  margin-bottom: 4rem;
+}
+.realizations h3 {
+  margin-bottom: 1rem;
+}
+.realizations img {
+  display: block;
+  width: 100%;
+}
+.realizations p {
+  margin-bottom: 1rem;
+}
+.realizations ul {
+  margin-bottom: 2rem;
+}
+.realizations .btn {
+  width: 50%;
+  padding: 1rem;
+  margin: 0 auto;
+}
 
+@media (min-width: 992px) {
+  .realizations .container .row {
+    display: flex;
+  }
+  .realizations .container .row:nth-child(odd) .realizations__text {
+    order: 2;
+    text-align: left;
+  }
+  .realizations .container .row:nth-child(odd) .realizations__text .btn {
+    margin: 0;
+  }
+  .realizations .container .row:nth-child(odd) .realizations__image {
+    order: 1;
+  }
+  .realizations .container .row:nth-child(even) .realizations__text {
+    order: 1;
+    text-align: right;
+  }
+  .realizations .container .row:nth-child(even) .realizations__text .btn {
+    margin-right: 0;
+  }
+  .realizations .container .row:nth-child(even) .realizations__image {
+    order: 2;
+  }
+  .realizations__text {
+    width: 50%;
+    padding: 2rem;
+  }
+  .realizations__image {
+    width: 50%;
+  }
+}
 .price {
   background-color: #4f4f4f;
 }
