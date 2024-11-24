@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -136,6 +137,54 @@ button {
 @media (min-width: 1400px) {
   .btn {
     margin-right: 3rem;
+  }
+}
+/* Podstawowe style dla tabeli */
+.table-default {
+  width: 100%; /* Tabela zajmuje 100% szerokości kontenera */
+  border-collapse: collapse; /* Łączenie granic komórek */
+}
+
+.table-default th,
+td {
+  padding: 8px; /* Wewnętrzny odstęp w komórkach */
+  text-align: left; /* Wyrównanie tekstu do lewej */
+  border: 1px solid #ddd; /* Granica komórek */
+}
+
+/* Styl dla urządzeń mobilnych */
+@media screen and (max-width: 600px) {
+  .wrapper-table {
+    display: block; /* Zmiana wyświetlania na blokowe dla responsywności */
+    overflow-x: auto; /* Dodanie przewijania poziomego, gdy zawartość jest zbyt szeroka */
+  }
+  .wrapper-table table,
+  .wrapper-table thead,
+  .wrapper-table tbody,
+  .wrapper-table th,
+  .wrapper-table td,
+  .wrapper-table tr {
+    display: block; /* Blokowe wyświetlanie wszystkich elementów tabeli */
+  }
+  .wrapper-table thead tr {
+    position: absolute; /* Ukrycie nagłówków w bloku */
+    top: -9999px;
+    left: -9999px;
+  }
+  .wrapper-table tr {
+    margin-bottom: 20px; /* Odstęp między wierszami */
+    border: 1px solid #ddd; /* Granica dla wierszy */
+  }
+  .wrapper-table td {
+    border: none; /* Usunięcie granicy dla komórek */
+    position: relative;
+    padding-left: 50%; /* Przesunięcie tekstu w lewo dla lepszej czytelności */
+  }
+  .wrapper-table td::before {
+    position: absolute;
+    left: 6px;
+    content: attr(data-label); /* Użycie atrybutu data-label jako etykiety dla komórek */
+    font-weight: bold; /* Pogrubienie etykiety */
   }
 }
 .container {
@@ -288,13 +337,21 @@ section h2 {
   }
 }
 .price {
+  padding: 2rem 0;
   background-color: #4f4f4f;
+}
+.price h2 {
+  margin-bottom: 2rem;
 }
 
 .contact {
+  padding: 2rem 0;
   background-color: #b6b6b6;
 }
 
+.footer {
+  padding: 2rem 0;
+}
 .footer__bottom {
   text-align: center;
 }/*# sourceMappingURL=main.css.map */

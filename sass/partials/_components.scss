@@ -2,7 +2,7 @@
 
 ///////////////////////////////////////////////// Navigation
 .nav {
-    background-color: $theme-color;
+	background-color: $theme-color;
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -79,3 +79,54 @@
 }
 
 /////////////////////////////////////////// Button link end
+///////////////////////////////////////////////////////////
+/////////////////////////////////////////////// Price
+/* Podstawowe style dla tabeli */
+.table-default {
+	width: 100%; /* Tabela zajmuje 100% szerokości kontenera */
+	border-collapse: collapse; /* Łączenie granic komórek */
+}
+
+.table-default th,
+td {
+	padding: 8px; /* Wewnętrzny odstęp w komórkach */
+	text-align: left; /* Wyrównanie tekstu do lewej */
+	border: 1px solid #ddd; /* Granica komórek */
+}
+
+/* Styl dla urządzeń mobilnych */
+@media screen and (max-width: 600px) {
+	.wrapper-table {
+		display: block; /* Zmiana wyświetlania na blokowe dla responsywności */
+		overflow-x: auto; /* Dodanie przewijania poziomego, gdy zawartość jest zbyt szeroka */
+		table,
+		thead,
+		tbody,
+		th,
+		td,
+		tr {
+			display: block; /* Blokowe wyświetlanie wszystkich elementów tabeli */
+		}
+		thead tr {
+			position: absolute; /* Ukrycie nagłówków w bloku */
+			top: -9999px;
+			left: -9999px;
+		}
+		tr {
+			margin-bottom: 20px; /* Odstęp między wierszami */
+			border: 1px solid #ddd; /* Granica dla wierszy */
+		}
+
+		td {
+			border: none; /* Usunięcie granicy dla komórek */
+			position: relative;
+			padding-left: 50%; /* Przesunięcie tekstu w lewo dla lepszej czytelności */
+		}
+		td::before {
+			position: absolute;
+			left: 6px;
+			content: attr(data-label); /* Użycie atrybutu data-label jako etykiety dla komórek */
+			font-weight: bold; /* Pogrubienie etykiety */
+		}
+	}
+}

@@ -184,14 +184,20 @@ section h2 {
 //////////////////////////////////////////// price
 
 .price {
+	padding: 2rem 0;
 	background-color: $theme-color;
+	h2 {
+		margin-bottom: 2rem;
+	}
 }
 
 .contact {
+	padding: 2rem 0;
 	background-color: $secondary-color;
 }
 
 .footer {
+	padding: 2rem 0;
 	&__bottom {
 		text-align: center;
 	}
