@@ -81,52 +81,101 @@
 /////////////////////////////////////////// Button link end
 ///////////////////////////////////////////////////////////
 /////////////////////////////////////////////// Price
-/* Podstawowe style dla tabeli */
 .table-default {
-	width: 100%; /* Tabela zajmuje 100% szerokości kontenera */
-	border-collapse: collapse; /* Łączenie granic komórek */
+	width: 100%;
+	border-collapse: collapse;
 }
 
 .table-default th,
 td {
-	padding: 8px; /* Wewnętrzny odstęp w komórkach */
-	text-align: left; /* Wyrównanie tekstu do lewej */
-	border: 1px solid #ddd; /* Granica komórek */
+	padding: 8px;
+	text-align: left;
+	border: 1px solid $light-color;
 }
 
 /* Styl dla urządzeń mobilnych */
 @media screen and (max-width: 600px) {
 	.wrapper-table {
-		display: block; /* Zmiana wyświetlania na blokowe dla responsywności */
-		overflow-x: auto; /* Dodanie przewijania poziomego, gdy zawartość jest zbyt szeroka */
+		display: block;
+		overflow-x: auto;
 		table,
 		thead,
 		tbody,
 		th,
 		td,
 		tr {
-			display: block; /* Blokowe wyświetlanie wszystkich elementów tabeli */
+			display: block;
 		}
 		thead tr {
-			position: absolute; /* Ukrycie nagłówków w bloku */
+			position: absolute;
 			top: -9999px;
 			left: -9999px;
 		}
 		tr {
-			margin-bottom: 20px; /* Odstęp między wierszami */
-			border: 1px solid #ddd; /* Granica dla wierszy */
+			margin-bottom: 2rem;
+			border: 1px solid $light-color;
 		}
 
 		td {
-			border: none; /* Usunięcie granicy dla komórek */
+			border: none;
 			position: relative;
-			padding-left: 50%; /* Przesunięcie tekstu w lewo dla lepszej czytelności */
+			padding-left: 50%;
 		}
 		td::before {
 			position: absolute;
-			left: 6px;
-			content: attr(data-label); /* Użycie atrybutu data-label jako etykiety dla komórek */
-			font-weight: bold; /* Pogrubienie etykiety */
+			left: 0.6rem;
+			content: attr(data-label);
+			font-weight: bold;
 		}
 	}
+}
+
+
+/////////////////////////////////////////// Price end
+///////////////////////////////////////////////////////////
+/////////////////////////////////////////////// Form
+/// 
+
+.wrapper-form {
+    max-width: 600px;
+    background: $light-color;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+ .form-group input[type="text"],
+ .form-group input[type="email"],
+ .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+}
+
+.wrapper-form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: $secondary-color;
+    color: $light-color;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wrapper-form button:hover {
+    background-color: #b0b0b0;
+}
+
+#responseMessage {
+    margin-top: 20px;
 }

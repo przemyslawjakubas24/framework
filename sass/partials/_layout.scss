@@ -192,13 +192,16 @@ section h2 {
 }
 
 .contact {
-	padding: 2rem 0;
-	background-color: $secondary-color;
+	h2 {
+		margin-bottom: 2rem;
+	}
 }
 
 .footer {
-	padding: 2rem 0;
+	padding-top: 2rem;
+	background-color: $secondary-color;
 	&__bottom {
+		padding: 2rem 0;
 		text-align: center;
 	}
 }
