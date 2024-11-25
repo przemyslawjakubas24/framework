@@ -27,3 +27,23 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll)
 
+
+//contact form
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Zatrzymaj domyślne działanie formularza
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Tutaj możesz dodać kod do wysyłania danych na serwer
+
+    // Wyświetlenie komunikatu po wysłaniu formularza
+    const responseMessage = document.getElementById('responseMessage');
+    responseMessage.innerHTML = `<p>Dziękujemy za kontakt, ${name}! Twoja wiadomość została wysłana.</p>`;
+    
+    // Resetowanie formularza
+    document.getElementById('contactForm').reset();
+});
+
