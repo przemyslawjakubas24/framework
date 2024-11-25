@@ -386,6 +386,9 @@ section h2 {
 .price h2 {
   margin-bottom: 2rem;
 }
+.price .wrapper-table {
+  margin-bottom: 2rem;
+}
 
 .contact h2 {
   margin-bottom: 2rem;
