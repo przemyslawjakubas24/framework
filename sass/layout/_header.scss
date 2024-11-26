@@ -3,7 +3,7 @@
 @use '../core/variables' as *;
 
 .header {
-    background-color: $secondary-color;
+    background-color: $theme-color;
     h1 {
         text-align: center;
     }
