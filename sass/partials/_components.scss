@@ -130,19 +130,9 @@ td {
 	}
 }
 
-
-/////////////////////////////////////////// Price end
-///////////////////////////////////////////////////////////
-/////////////////////////////////////////////// Form
-/// 
-
-.wrapper-form {
-    max-width: 600px;
-    background: $light-color;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+//////////////////////////////////////////////
+/////////////////////////////////////////////
+//////////////////////////////////////////// Form
 
 .form-group {
     margin-bottom: 1.5rem;
@@ -162,7 +152,7 @@ td {
     border-radius: 4px;
 }
 
-.wrapper-form button {
+.wrapper-contact button {
     width: 100%;
     padding: 1rem;
     background-color: $secondary-color;
@@ -172,7 +162,7 @@ td {
     cursor: pointer;
 }
 
-.wrapper-form button:hover {
+.wrapper-contact button:hover {
     background-color: #b0b0b0;
 }
 

@@ -186,14 +186,6 @@ td {
     font-weight: bold;
   }
 }
-.wrapper-form {
-  max-width: 600px;
-  background: #f3f3f3;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -212,7 +204,7 @@ td {
   border-radius: 4px;
 }
 
-.wrapper-form button {
+.wrapper-contact button {
   width: 100%;
   padding: 1rem;
   background-color: #b6b6b6;
@@ -222,7 +214,7 @@ td {
   cursor: pointer;
 }
 
-.wrapper-form button:hover {
+.wrapper-contact button:hover {
   background-color: #b0b0b0;
 }
 
@@ -235,6 +227,14 @@ td {
   padding: 0 2rem;
   width: 100%;
   max-width: 1200px;
+}
+
+.wrapper-contact {
+  max-width: 600px;
+  background: #f3f3f3;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
