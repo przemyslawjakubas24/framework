@@ -1,0 +1,16 @@
+// -------------------------------------Mixins-------------------------------------//
+//________________________________________________________________________________//
+@use 'variables' as *;
+
+// Function gradient
+@mixin gradient($direction, $start-color, $end-color) {
+	background: linear-gradient($direction, $start-color, $end-color);
+  }
+
+
+
+// Mixins styles
+@mixin default-animation {
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
