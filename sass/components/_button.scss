@@ -2,14 +2,12 @@
 //________________________________________________________________________________//
 @use '../core/variables' as *;
 
-@media (max-width: 575.98px) {
-	.btn--default {
-        width: 100%;
-		background: $theme-color;
-		a {
-            display: block;
-			padding: 2rem 1rem;
-            color: $light-color;
-		}
+.btn--default {
+	width: 100%;
+	background: $theme-color;
+	a {
+		display: block;
+		padding: 2rem 1rem;
+		color: $light-color;
 	}
 }

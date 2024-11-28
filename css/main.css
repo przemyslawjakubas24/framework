@@ -69,17 +69,16 @@ button {
   font-size: 1.6rem;
 }
 
-@media (max-width: 575.98px) {
-  .btn--default {
-    width: 100%;
-    background: #23a7ff;
-  }
-  .btn--default a {
-    display: block;
-    padding: 2rem 1rem;
-    color: #f3f3f3;
-  }
+.btn--default {
+  width: 100%;
+  background: #23a7ff;
 }
+.btn--default a {
+  display: block;
+  padding: 2rem 1rem;
+  color: #f3f3f3;
+}
+
 .nav .container {
   display: flex;
   flex-direction: column;
@@ -149,4 +148,10 @@ button {
 }
 .header .btn {
   margin-bottom: 2rem;
+}
+
+.offer__item {
+  width: 100%;
+  height: 360px;
+  background-color: #808080;
 }/*# sourceMappingURL=main.css.map */
