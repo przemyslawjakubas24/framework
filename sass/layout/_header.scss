@@ -3,8 +3,21 @@
 @use '../core/variables' as *;
 
 .header {
-    background-color: $theme-color;
+    background: #dddddd url('../img/ph_img.png') center;
+    // background-position-y: -160px;
+    // background-position-x: 50%;
+    background-size: cover;
+    padding: 8rem 2rem;
     h1 {
         text-align: center;
+        margin-bottom: 2rem;
+    }
+    p {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .btn {
+        margin-bottom: 2rem;
     }
 }

@@ -69,6 +69,17 @@ button {
   font-size: 1.6rem;
 }
 
+@media (max-width: 575.98px) {
+  .btn--default {
+    width: 100%;
+    background: #23a7ff;
+  }
+  .btn--default a {
+    display: block;
+    padding: 2rem 1rem;
+    color: #f3f3f3;
+  }
+}
 .nav .container {
   display: flex;
   flex-direction: column;
@@ -113,9 +124,29 @@ button {
   max-width: 1200px;
 }
 
+.button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section h2 {
+  text-align: center;
+}
+
 .header {
-  background-color: #23a7ff;
+  background: #dddddd url("../img/ph_img.png") center;
+  background-size: cover;
+  padding: 8rem 2rem;
 }
 .header h1 {
   text-align: center;
+  margin-bottom: 2rem;
+}
+.header p {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.header .btn {
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=main.css.map */
