@@ -79,6 +79,9 @@ button {
   color: #f3f3f3;
 }
 
+.nav {
+  background-color: #333;
+}
 .nav .container {
   display: flex;
   flex-direction: column;
@@ -116,6 +119,10 @@ button {
   background-color: #23a7ff;
 }
 
+.footer {
+  text-align: center;
+}
+
 .container {
   margin: 0 auto;
   padding: 2rem;
@@ -129,8 +136,22 @@ button {
   align-items: center;
 }
 
+.section {
+  padding-top: 2rem;
+}
 .section h2 {
   text-align: center;
+}
+
+.section:nth-child(odd) {
+  background-color: #333;
+}
+.section:nth-child(odd) h2 {
+  color: #f3f3f3;
+}
+
+.section:nth-child(even) {
+  background-color: #f3f3f3;
 }
 
 .header {
@@ -151,7 +172,11 @@ button {
 }
 
 .offer__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 360px;
+  height: 280px;
+  margin-bottom: 2rem;
   background-color: #808080;
 }/*# sourceMappingURL=main.css.map */

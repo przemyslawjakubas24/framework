@@ -4,8 +4,12 @@
 
 .offer {
 	&__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 		width: 100%;
-        height: 360px;
+        height: 280px;
+        margin-bottom: 2rem;
         background-color: $grey-color;
 	}
 }
