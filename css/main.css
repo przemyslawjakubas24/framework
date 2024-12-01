@@ -116,6 +116,57 @@ button {
   background-color: #23a7ff;
 }
 
+.table-default {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-default th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #f3f3f3;
+  color: #f3f3f3;
+}
+
+/* ---------------------- Styles for mobile devices -------------------- */
+@media (max-width: 600px) {
+  .wrapper-table {
+    display: block;
+    overflow-x: auto;
+  }
+  .wrapper-table table,
+  .wrapper-table thead,
+  .wrapper-table tbody,
+  .wrapper-table th,
+  .wrapper-table td,
+  .wrapper-table tr {
+    display: block;
+  }
+  .wrapper-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .wrapper-table tr {
+    margin-bottom: 2rem;
+    border: 1px solid #f3f3f3;
+  }
+  .wrapper-table tr:last-child {
+    margin-bottom: 0;
+  }
+  .wrapper-table td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+  .wrapper-table td::before {
+    position: absolute;
+    left: 1rem;
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
 .footer {
   text-align: center;
 }
@@ -181,17 +232,6 @@ button {
   margin-bottom: 0;
 }
 
-.price {
-  padding: 2rem 0;
-  background-color: #23a7ff;
-}
-.price h2 {
-  margin-bottom: 2rem;
-}
-.price .wrapper-table {
-  margin-bottom: 2rem;
-}
-
 .realizations__text {
   padding-bottom: 2rem;
   text-align: center;
@@ -230,6 +270,7 @@ button {
   margin-bottom: 2rem;
 }
 
+/* ------------------ Styles for minimum 992px screens ---------------- */
 @media (min-width: 992px) {
   .realizations .container .row {
     display: flex;

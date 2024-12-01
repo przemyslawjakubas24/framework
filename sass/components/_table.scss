@@ -2,3 +2,60 @@
 //________________________________________________________________________________//
 @use '../core/variables' as *;
 
+.table-default {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table-default th,
+td {
+	padding: 8px;
+	text-align: left;
+	border: 1px solid $light-color;
+    color: $light-color;
+}
+
+/* ---------------------- Styles for mobile devices -------------------- */
+
+@media (max-width: 600px) {
+	.wrapper-table {
+		display: block;
+		overflow-x: auto;
+		table,
+		thead,
+		tbody,
+		th,
+		td,
+		tr {
+			display: block;
+		}
+
+		thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+		tr {
+			margin-bottom: 2rem;
+			border: 1px solid $light-color;
+		}
+
+        tr:last-child {
+            margin-bottom: 0;
+        }
+
+		td {
+			border: none;
+			position: relative;
+			padding-left: 50%;
+		}
+        
+		td::before {
+			position: absolute;
+			left: 1rem;
+			content: attr(data-label);
+			font-weight: bold;
+		}
+	}
+}
