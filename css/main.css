@@ -181,6 +181,17 @@ button {
   margin-bottom: 0;
 }
 
+.price {
+  padding: 2rem 0;
+  background-color: #23a7ff;
+}
+.price h2 {
+  margin-bottom: 2rem;
+}
+.price .wrapper-table {
+  margin-bottom: 2rem;
+}
+
 .realizations__text {
   padding-bottom: 2rem;
   text-align: center;

@@ -2,3 +2,13 @@
 //________________________________________________________________________________//
 @use '../core/variables' as *;
 
+.price {
+	padding: 2rem 0;
+	background-color: $theme-color;
+	h2 {
+		margin-bottom: 2rem;
+	}
+	.wrapper-table {
+		margin-bottom: 2rem;
+	}
+}
