@@ -179,4 +179,7 @@ button {
   height: 280px;
   margin-bottom: 2rem;
   background-color: #808080;
+}
+.offer :last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
