@@ -67,8 +67,12 @@ ul, li {
 }
 
 button {
+	display: block;
+	width: 100%;
+	padding: .5rem;
 	background: none;
 	border: 0;
 	cursor: pointer;
 	font-size: 1.6rem;
+	background-color: $theme-color;
 }

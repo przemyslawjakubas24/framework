@@ -2,12 +2,12 @@
 //________________________________________________________________________________//
 @use '../core/variables' as *;
 
-.btn--default {
+.btn {
+	display: block;
 	width: 100%;
-	background: $theme-color;
-	a {
-		display: block;
-		padding: 2rem 1rem;
-		color: $light-color;
-	}
+	margin: 0 auto;
+	padding: 1rem;
+	text-align: center;
+	color: $light-color;
+	background-color: $theme-color;
 }
